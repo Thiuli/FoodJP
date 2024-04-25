@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodJP</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./mobile.css">
+</head>
+<body>
+    <header class="header">
+        <span class="header-logo">Food<span style="color: #DA2535;">JP</span></span>
+        <div class="menu-section">
+            <div class="menu-toggle" onclick="openMenu()">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+            </div>
+
+            <ul class="header-nav">
+                <li class="nav-item"><a href="home" onclick="linkClick()">Início</a></li>
+                <li class="nav-item"><a href="menu" onclick="linkClick()">Cardápio</a></li>
+                <li class="nav-item"><a href="about" onclick="linkClick()">Sobre</a></li>
+                <button class="nav-button" onclick="linkClick()">Entrar</button>
+            </ul>
+        </div>
+        <button class="header-button" onclick="linkClick()">Entrar</button>
+    </header>
+
+    <section class="section-menu" id="menu">
+        <div class="menu-text">
+            <h1 class="menu-title">Comida Oriental</h1>
+            <p class="menu-desc">A culinária Japonesa é bastante equilibrada, sendo muito rica em peixes (ômega 3), vegetais, massas e ingredientes frescos.</p>
+            <button class="menu-button">Cardápio</button>
+        </div>
+
+        <img src="img/sc1.png" alt="" class="menu-img">
+    </section>
+
+    <section class="section-readmore">
+        <img src="img/sc2.png" alt="" class="readmore-img">
+
+        <div class="readmore-text">
+            <h1 class="readmore-title">Feita de forma tradicional</h1>
+            <p class="readmore-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <a href="https://www.tudogostoso.com.br/noticias/como-preparar-comida-japonesa-perfeitamente-i-sushis-a1053.htm" class="link">Ler mais sobre o modo de preparo</a>
+        </div>
+    </section>
+
+    <section class="section-popular">
+        <h1 class="popular-title">Mais populares</h1>
+
+        <div class="popular-cards">
+            <div class="popular-card">
+                <img src="img/p1.png" alt="" class="popular-card-img">
+                <h3 class="popular-card-title">Ramem de Frango</h3>
+                <p class="popular-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span class="popular-card-price">R$ 30</span>
+            </div>
+
+            <div class="popular-card">
+                <img src="img/p2.png" alt="" class="popular-card-img">
+                <h3 class="popular-card-title">Ramem Apimentado</h3>
+                <p class="popular-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span class="popular-card-price">R$ 30</span>
+            </div>
+
+            <div class="popular-card">
+                <img src="img/p3.png" alt="" class="popular-card-img">
+                <h3 class="popular-card-title">Ramem Tradicional</h3>
+                <p class="popular-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span class="popular-card-price">R$ 30</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-feedback">
+        <h1 class="feedback-title">Comentários</h1>
+
+        <div class="feedback-cards">
+            <div class="feedback-card">
+                <img src="img/profile1.png" alt="" class="feedback-card-profile">
+                <h4 class="feedback-card-author">Daniele Almeida</h4>
+                <p class="feedback-card-desc">Ótimo serviço! Encantada com a qualidade dos pratos.</p>
+                <img src="img/stars.png" alt="" class="feedback-card-stars">
+            </div>
+
+            <div class="feedback-card">
+                <img src="img/profile2.png" alt="" class="feedback-card-profile">
+                <h4 class="feedback-card-author">Ricardo França</h4>
+                <p class="feedback-card-desc">Não é apenas a comida excelente, o serviço torna a experiência especial.</p>
+                <img src="img/stars.png" alt="" class="feedback-card-stars">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-location">
+        <h1 class="location-title">Localização</h1>
+        <img src="img/" alt="" class="location-img">
+
+        <form class="location-form" id="form">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--uil location-icon" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="uil:location-point" data-width="30" style="color: rgb(218, 37, 53);"><path fill="currentColor" d="M18 4.48a8.45 8.45 0 0 0-12 12l5.27 5.28a1 1 0 0 0 1.42 0L18 16.43a8.45 8.45 0 0 0 0-11.95M16.57 15L12 19.59L7.43 15a6.46 6.46 0 1 1 9.14 0M9 7.41a4.32 4.32 0 0 0 0 6.1a4.31 4.31 0 0 0 7.36-3a4.24 4.24 0 0 0-1.26-3.05A4.3 4.3 0 0 0 9 7.41m4.69 4.68a2.33 2.33 0 1 1 .67-1.63a2.33 2.33 0 0 1-.72 1.63Z"></path></svg>
+            <input type="search" class="location-input" placeholder="Localização para entrega">
+            <button class="location-button" form="form"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--uil search-icon" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="uil:search" data-width="30" style="color: white;"><path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39M11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7"></path></svg> <span class="text-button">Buscar</span></button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <h1 class="footer-title">Food<span style="color: #DA2535;">JP</span></h1>
+
+        <nav class="nav-cards">
+            <ul class="nav-card">
+                <h2 class="nav-title" id="about">
+                    Contato
+                </h2>
+                <li class="nav-item">+55 21 9999-9999</li>
+                <li class="nav-item">email@gmail.com</li>
+            </ul>
+
+            <ul class="nav-card">
+                <h2 class="nav-title">
+                    Sobre nós
+                </h2>
+                <li class="nav-item">Menu</li>
+                <li class="nav-item">Valores</li>
+                <li class="nav-item">Valores</li>
+            </ul>           
+
+            <ul class="nav-card">
+                <h2 class="nav-title">
+                    Serviços
+                </h2>
+                <li class="nav-item">Entrega</li>
+                <li class="nav-item">Retirada</li>
+            </ul>    
+        </nav>
+    </footer>
+
+
+    <script src="./FoodJP_files/iconify.min.js.download"></script>
+    <script type="text/javascript" src="./FoodJP_files/script.js.download"></script>
+
+                                                                                                                                                                 </body></html>
